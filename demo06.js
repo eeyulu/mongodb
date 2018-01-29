@@ -178,3 +178,15 @@ db.workmate.find(
     )
     
 
+//分页显示  年龄从小到大      sort
+db.workmate.find(
+    {},
+    {name:true,age:true,_id:false}
+).limit(2).skip(0).sort({age:1})
+
+
+//$where
+db.workmate.find(
+    {$where:'this.age>30'},
+    {name:true,age:true,_id:false}
+)
