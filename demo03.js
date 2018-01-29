@@ -30,6 +30,10 @@ var db = connect('company');
 // db.workmate.update({},{$set:{interset:[]}},{multi:true});
 //upsert
 // db.workmate.update({name:'xiaowang'},{$set:{age:232}},{upsert:true});
+
+
+// ----------------update数组修改器
+
 //$push
 // db.workmate.update({name:"xiaowang"},{$push:{interset:'draw'}});
 // db.workmate.update({name:"she"},{$push:{"skill.skillFour":'ooxx'}});
